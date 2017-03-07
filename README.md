@@ -16,7 +16,7 @@ HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters 之目錄下<br />
 根據微軟的技術文件，此設定能偵測並發現遠端伺服器的MTU，也就是最佳化MTU數值<br />
 新增一個名為 EnablePMTUBHDetect 的 DWORD 值 並設定為 0<br />
 與上方設定相輔相成，主要是為了避免被黑洞MTU吃掉<br />
-<del>懶人包下載(點右鍵另存新檔)</del><br />
+[懶人包下載(點右鍵另存新檔)] (https://goo.gl/hQ3ikz)<br />
 
 網卡中的QoS記得打開，不然沒有QoS標頭後TCP/IP的封包少了傳送優先權，變得連一些無關緊要的程式都在跟你搶網速<br />
 <img src=http://i.imgur.com/qX5Yy7f.png width=800px><br /><br />
