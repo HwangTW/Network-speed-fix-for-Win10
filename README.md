@@ -9,7 +9,7 @@ HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters 之目錄下<br />
 新增一個名為 TcpMaxDupAcks 的 DWORD 值 並設定為 1<br />
 此設定能將封包延遲送出調成1，也就是0延遲的意思<br />
 新增一個名為 DefaultTTL 的 DWORD 值 並設定為 64<br />
-此能縮小未傳送到目的地的封包存活時間<br />
+此能縮小未傳送到目的地的封包[存活時間] (https://goo.gl/zEmFPX)<br />
 新增一個名為 GlobalMaxTcpWindowSize 的 DWORD 值 並設定為 614400<br />
 此能設定最大傳送之TCP封包大小，我對此數值的設定方法：網速(假設60Mbps)*10240，根據微軟的官方技術文件表示其大小不能超過4194303<br />
 新增一個名為 EnablePMTUDiscovery 的 DWORD 值 並設定為 1<br />
@@ -18,8 +18,9 @@ HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters 之目錄下<br />
 與上方設定相輔相成，主要是為了避免被黑洞MTU吃掉<br />
 <del>懶人包下載(點右鍵另存新檔)</del><br />
 
-網卡中的QoS記得打開，不然沒有QoS標頭後TCP/IP的封包少了傳送優先權，變得連一些無關緊要的程式都在跟你搶網速，記得於gpedit.msc中設定QoS原則<br />
-
+網卡中的QoS記得打開，不然沒有QoS標頭後TCP/IP的封包少了傳送優先權，變得連一些無關緊要的程式都在跟你搶網速<br />
+<img src=http://i.imgur.com/qX5Yy7f.png width=800px><br /><br />
+以下為於gpedit.msc中設定QoS原則的教學<br />
 其一：電腦設定->系統管理範本->網路->QoS封包排程器<br />
 點兩下修改限制可保留的頻寬<br />
 <img src=http://i.imgur.com/ujthGjo.png width=800px><br />
