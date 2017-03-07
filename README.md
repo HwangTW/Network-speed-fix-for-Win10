@@ -19,18 +19,18 @@ HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters 之目錄下<br />
 [懶人包下載(點右鍵另存新檔)] (https://goo.gl/hQ3ikz)<br />
 
 網卡中的QoS記得打開，不然沒有QoS標頭後TCP/IP的封包少了傳送優先權，變得連一些無關緊要的程式都在跟你搶網速<br />
-<img src=http://i.imgur.com/qX5Yy7f.png width=800px><br /><br />
+<img src=http://i.imgur.com/qX5Yy7f.png width=400px><br /><br />
 以下為於gpedit.msc中設定QoS原則的教學<br />
 其一：電腦設定->系統管理範本->網路->QoS封包排程器<br />
 點兩下修改限制可保留的頻寬<br />
-<img src=http://i.imgur.com/ujthGjo.png width=800px><br />
-<img src=http://i.imgur.com/ouAsaib.png width=800px><br /><br />
+<img src=http://i.imgur.com/ujthGjo.png width=400px><br />
+<img src=http://i.imgur.com/ouAsaib.png width=400px><br /><br />
 其二：電腦設定->Windows設定->以原則為依據的 QoS<br />
 對 "以原則為依據的 QoS" 點右鍵<br />
-<img src=http://i.imgur.com/P5ZkEnI.png width=800px><br /><br />
+<img src=http://i.imgur.com/P5ZkEnI.png width=400px><br /><br />
 以建立 [OBS studio] (https://obsproject.com) 原則為例<br />
-<img src=http://i.imgur.com/oz5eEDX.png width=800px><br />
-<img src=http://i.imgur.com/sgNnXDI.png width=800px><br />
-<img src=http://i.imgur.com/LToHhlh.png width=800px><br />
-<img src=http://i.imgur.com/A3nWbu6.png width=800px><br /><br />
+<img src=http://i.imgur.com/oz5eEDX.png width=400px><br />
+<img src=http://i.imgur.com/sgNnXDI.png width=400px><br />
+<img src=http://i.imgur.com/LToHhlh.png width=400px><br />
+<img src=http://i.imgur.com/A3nWbu6.png width=400px><br /><br />
 設定完成後記得重新啟動電腦
